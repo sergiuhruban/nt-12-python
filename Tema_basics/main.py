@@ -40,16 +40,5 @@ except ValueError:
 
 # problema functie numar nedefinit de parametri
 
-def param(*args, **kwargs):
-    s = 0
-    if type(kwargs) == int:
-        s += kwargs
-    for x in args:
-        if type(x) == int or type(x) == float:
-            s += x
-    return s
 
-print(param(1, 5, -3, 'abc', [12, 56, 'cad']))
-print(param())
-print(param(2, 4, 'abc', kwargs=2))
 
